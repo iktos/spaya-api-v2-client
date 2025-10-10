@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "spaya-api-v2-client"
+version = "1.0.0"
+description = ""
+authors = ["Abderraouf El Gasser <abderraouf.elgasser@iktos.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tabulate = "*"
+requests = "*"
+matplotlib = "*"
+networkx = "*"
+rdkit = "*"
+numpy = "^1"
+Pillow = "*"
+taskipy = "*"
+pandas = "*"
+seaborn = "*"
+plotly = "*"
+jupyter = "*"
+[tool.taskipy.tasks]
+run = "python main.py --token ${SPAYA_API_TOKEN} --base-url ${SPAYA_API_URL}"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
